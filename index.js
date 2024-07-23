@@ -5,7 +5,7 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 var corsOptions = {
-  origin: '*',  //* 모두허용
+  origin: '*~',  //* 모두허용
 }
 
 app.use(cors(corsOptions));
@@ -17,7 +17,7 @@ var db = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : '',
-  database:"react_bbs"
+  database:"2024_portfolio"
 });
 
 db.connect();
